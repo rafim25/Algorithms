@@ -1,13 +1,13 @@
 function countSum(arr,sum){ 
 
-    var arr = [10,-10,5,5,8];
-    var sum = 8;
+    var arr = [10 ,2 ,-2 ,-20 ,10];
+    var sum = -10;
     var obj={};
     var count = 0;
     var cursum= 0;
 
     for(let i=0;i<arr.length;i++){
-        cursum = arr[i];
+        cursum += arr[i];
         if(cursum == sum){
             count++;
         }
@@ -20,3 +20,6 @@ function countSum(arr,sum){
 
     return count;
 }
+
+
+console.log(countSum());

@@ -65,3 +65,6 @@ class LinkedList {
         return indexes;
     }
 }
+
+const list = new LinkedList();
+

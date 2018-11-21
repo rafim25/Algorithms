@@ -14,3 +14,4 @@ class Queue {
         return this.reverse ? this.queue.shift() : this.queue.pop();
     }
 }
+

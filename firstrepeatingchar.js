@@ -1,4 +1,5 @@
-var str = "abcbefc";
+//var str = "geeksforgeeks";
+var str = "abcd";
 var obj={};
 for(var i =0; i<str.length;i++){
     if(obj[str.charAt(i)]){
@@ -8,9 +9,9 @@ for(var i =0; i<str.length;i++){
         obj[str.charAt(i)] = 1;
     }
 }
-var repeated,nonrepeated;
+var repeated,nonrepeated,secondmost;
 for(key in obj){
-    if(nonrepeated && repeated) break;
+    if(nonrepeated && repeated && secondmost) break;
     if(obj[key]==1 && !nonrepeated){
         nonrepeated = key;
         console.log("First Non Repeating Character is :",nonrepeated)
@@ -19,8 +20,10 @@ for(key in obj){
         repeated = key;
         console.log("First  Repeating Character is :",repeated)
    }
+   
 }
-console.log(obj);
+
+//console.log(obj);
 
 
 
