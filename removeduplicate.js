@@ -20,3 +20,4 @@ function removeDuplicates(str) {
    console.log(str);
 }
 
+removeDuplicates("sdfdsf");
